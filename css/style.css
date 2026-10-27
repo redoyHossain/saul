@@ -1,0 +1,397 @@
+/* Reset & Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family:
+    "Segoe UI",
+    -apple-system,
+    BlinkMacSystemFont,
+    Roboto,
+    sans-serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #222831; /* Exact Figma background color */
+  color: #ffffff;
+  line-height: 1.6;
+  min-height: 100vh;
+}
+
+/* Layout Utilities */
+.container {
+  max-width: 1236px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+/* Header Navigation */
+.navbar {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 2.5rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-family: "Oswald", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: 0%;
+  font-style: italic;
+  color: #eeeeee;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 48px;
+}
+
+.nav-links a {
+  color: #9ca3af;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+  font-size:;
+  font-weight: 400;
+  transition: color 0.2s;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+  color: #ffffff;
+}
+
+.nav-btn {
+  background-color: #1a3030;
+  color: #222831;
+  padding: 0.5rem 1.2rem;
+  border-radius: 20px;
+  font-weight: 600px;
+}
+
+.nav-btn:hover {
+  background-color: #00a8af;
+}
+
+/* Section Titles */
+.section-title {
+  font-size: 2.25rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 1rem;
+}
+
+/* 1. Hero Section */
+.hero-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 70vh;
+  padding: 2rem 0;
+}
+
+.hero-content {
+  max-width: 550px;
+  position: relative;
+}
+.arow {
+  position: absolute;
+  top: 20px;
+  left: -72px;
+}
+.hero-title {
+  font-family: "Poppins", sans-serif;
+  font-size: 96px;
+  font-weight: 800;
+  line-height: 96px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+}
+
+.hero-title .highlight {
+  color: #00c4cc;
+}
+
+/* Buttons */
+.button-group {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.65rem 1.6rem;
+  border-radius: 20px;
+  font-family: "Poppins", sans-serif;
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+  border: none;
+}
+
+.btn-primary {
+  background-color: #00c4cc;
+  color: #222831;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.btn-primary:hover {
+  background-color: transparent;
+  border-color: #ffffff;
+  color: #ffffff;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 196, 204, 0.3);
+}
+
+.btn-secondary {
+  background-color: transparent;
+  color: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.btn-secondary:hover {
+  border-color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+.icon {
+  fill: currentColor;
+}
+/* .illustration-placeholder {
+  background-image: url(/images/Group\ 2374.png);
+} */
+
+/* 2. About Section */
+.about-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5rem 0;
+  gap: 4rem;
+  position: relative;
+}
+.section-title .highlight {
+  color: #00c4cc;
+}
+.bulb {
+  position: absolute;
+  top: 210px;
+  left: 240px;
+}
+.arow2 {
+  position: absolute;
+  top: 606px;
+  left: 257px;
+  rotate: 185deg;
+}
+.music {
+  position: absolute;
+  top: 135px;
+  left: 96px;
+}
+
+.about-content {
+  max-width: 500px;
+}
+
+.about-text {
+  color: #9ca3af;
+  font-size: 0.95rem;
+  line-height: 1.7;
+}
+
+.read-more {
+  color: #ffffff;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.read-more:hover {
+  text-decoration: underline;
+}
+
+/* 3. My Recent Works Section */
+.works-section {
+  padding: 5rem 0;
+}
+
+.works-section .section-title {
+  margin-bottom: 2.5rem;
+}
+
+.works-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2rem;
+}
+
+.work-card {
+  background: #1e2532;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  transition: transform 0.2s ease;
+}
+
+.work-card:hover {
+  transform: translateY(-5px);
+}
+
+.card-img-placeholder {
+  height: 200px;
+  background: #252e40;
+}
+
+.card-info {
+  padding: 1.5rem;
+}
+
+.card-tag {
+  font-size: 0.8rem;
+  color: #00c4cc;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.work-card h3 {
+  font-size: 1.25rem;
+  margin-top: 0.4rem;
+  color: #ffffff;
+}
+
+/* 4. Contact Form Section */
+.contact-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5rem 0 7rem;
+  gap: 4rem;
+}
+
+.contact-content {
+  max-width: 500px;
+  width: 100%;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  margin-top: 1.5rem;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 0.85rem 1.2rem;
+  background-color: #1a1f29;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  color: #ffffff;
+  font-size: 0.95rem;
+  outline: none;
+  transition:
+    border-color 0.2s,
+    box-shadow 0.2s;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: #00c4cc;
+  box-shadow: 0 0 0 3px rgba(0, 196, 204, 0.15);
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+  color: #6b7280;
+}
+
+.submit-btn {
+  width: 100%;
+  margin-top: 0.5rem;
+  padding: 0.85rem;
+}
+
+/* Graphic Placeholders */
+.hero {
+}
+
+/* Footer Styles */
+.footer {
+  background-color: #1a1f29;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  padding: 2.5rem 2rem;
+}
+
+.footer-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-text {
+  color: #9ca3af;
+  font-size: 0.85rem;
+}
+
+.footer-socials {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.footer-socials a {
+  color: #9ca3af;
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: color 0.2s;
+}
+
+.footer-socials a:hover {
+  color: #00c4cc;
+}
+
+/* Responsive Breakpoints */
+@media (max-width: 900px) {
+  .hero-section,
+  .about-section,
+  .contact-section {
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .about-section {
+    flex-direction: column-reverse;
+  }
+
+  .illustration-placeholder {
+  }
+
+  .hero-title {
+    font-size: 2.75rem;
+  }
+
+  .nav-links {
+    display: none;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    gap: 1.5rem;
+    text-align: center;
+  }
+}

@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio - SaulDesign</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Header Navigation -->
+    <header class="navbar">
+      <div class="logo">SaulDesign</div>
+      <nav class="nav-links">
+        <a href="#" class="active">Home</a>
+        <a href="#about">About</a>
+
+        <a href="#contact" class="nav-btn">Contact</a>
+      </nav>
+    </header>
+
+    <!-- Main Container -->
+    <main class="container">
+      <!-- 1. Hero Section -->
+      <section class="hero-section">
+        <div class="hero-content">
+          <div class="arow"><img src="./images/Vector 187.png" alt="" /></div>
+          <h1 class="hero-title">
+            CREATIVE UI <br />
+            <span class="highlight">DESIGNER</span>
+          </h1>
+          <div class="button-group">
+            <a href="#contact" class="btn btn-primary">Hire me</a>
+            <a href="#" class="btn btn-secondary">
+              Download CV
+              <svg
+                class="icon"
+                viewBox="0 0 24 24"
+                width="16"
+                height="16"
+                fill="currentColor"
+              >
+                <path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z" />
+              </svg>
+            </a>
+          </div>
+        </div>
+        <div class="hero"><img src="./images/Group 2374.png" alt="" /></div>
+      </section>
+
+      <!-- 2. About Me Section -->
+      <section id="about" class="about-section">
+        <div class="about-content">
+          <h2 class="section-title">About 
+            <span class="highlight">me</span></h2>
+          <p class="about-text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
+            vulputate libero et velit interdum, ac aliquet odio mattis. Class
+            aptent taciti sociosqu ad litora torquent per conubia nostra, per
+            inceptos himenaeos. Curabitur tempus urna at turpis condimentum
+            lobortis.... <a href="#" class="read-more">Read more</a>
+          </p>
+        </div>
+        <div class="about-illustration">
+          <div class="illustration-placeholder graphic-about">
+            <img src="./images/Group 2375.png" alt="" />
+          </div>
+        </div>
+        <div class="music"><img src="./images/Vector 141.png" alt="" /></div>
+        <div class="arow2">
+          <img src="./images/Vector 186 (1).png" alt="" />
+        </div>
+        <div class="bulb"><img src="./images/lightbulb.png"" /></div>
+      </section>
+
+      <!-- 3. My Recent Works Section -->
+      <section id="works" class="works-section">
+        <h2 class="section-title">My recent works</h2>
+        <div class="works-grid">
+          <div class="work-card">
+            <div class="card-img-placeholder"></div>
+            <div class="card-info">
+              <span class="card-tag">UI/UX Design</span>
+              <h3>Website Redesign</h3>
+            </div>
+          </div>
+          <div class="work-card">
+            <div class="card-img-placeholder"></div>
+            <div class="card-info">
+              <span class="card-tag">Mobile App</span>
+              <h3>Fintech Dashboard</h3>
+            </div>
+          </div>
+          <div class="work-card">
+            <div class="card-img-placeholder"></div>
+            <div class="card-info">
+              <span class="card-tag">Branding</span>
+              <h3>SaaS Landing Page</h3>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 4. Got a Project in Mind Section (Contact Form) -->
+      <section id="contact" class="contact-section">
+        <div class="contact-content">
+          <h2 class="section-title">Got a project in mind?</h2>
+          <form class="contact-form" onsubmit="event.preventDefault()">
+            <div class="form-group">
+              <input type="text" placeholder="Your name" required />
+            </div>
+            <div class="form-group">
+              <input type="email" placeholder="Your email" required />
+            </div>
+            <div class="form-group">
+              <textarea placeholder="Your message" rows="4" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary submit-btn">
+              Send message
+            </button>
+          </form>
+        </div>
+        <div class="contact-illustration">
+          <div class="illustration-placeholder graphic-contact"></div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="logo">SaulDesign</div>
+        <p class="footer-text">&copy; 2026 SaulDesign. All rights reserved.</p>
+        <div class="footer-socials">
+          <a href="#">Twitter</a>
+          <a href="#">Dribbble</a>
+          <a href="#">LinkedIn</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
