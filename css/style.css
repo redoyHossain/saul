@@ -3,32 +3,30 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family:
-    "Segoe UI",
-    -apple-system,
-    BlinkMacSystemFont,
-    Roboto,
-    sans-serif;
+
   scroll-behavior: smooth;
 }
 
 body {
-  background-color: #222831; /* Exact Figma background color */
+  background-color: #222831;
   color: #ffffff;
   line-height: 1.6;
   min-height: 100vh;
 }
+header {
+  border-bottom: 1px solid #eeeeee1a;
+}
 
 /* Layout Utilities */
 .container {
-  max-width: 1236px;
+  max-width: 1440px;
   margin: 0 auto;
   padding: 0 2rem;
 }
 
 /* Header Navigation */
 .navbar {
-  max-width: 1100px;
+  max-width: 1440px;
   margin: 0 auto;
   padding: 2.5rem 2rem;
   display: flex;
@@ -90,17 +88,16 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  min-height: 70vh;
-  padding: 2rem 0;
 }
 
 .hero-content {
   max-width: 550px;
   position: relative;
+  padding: 173px 0 172px 0;
 }
 .arow {
   position: absolute;
-  top: 20px;
+  top: 200px;
   left: -72px;
 }
 .hero-title {
@@ -168,16 +165,13 @@ body {
 .icon {
   fill: currentColor;
 }
-/* .illustration-placeholder {
-  background-image: url(/images/Group\ 2374.png);
-} */
 
 /* 2. About Section */
 .about-section {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 5rem 0;
+  padding: 230px 0 84px 0;
   gap: 4rem;
   position: relative;
 }
@@ -186,8 +180,8 @@ body {
 }
 .bulb {
   position: absolute;
-  top: 210px;
-  left: 240px;
+  top: 370px;
+  left: 185px;
 }
 .arow2 {
   position: absolute;
@@ -197,8 +191,8 @@ body {
 }
 .music {
   position: absolute;
-  top: 135px;
-  left: 96px;
+  top: 350px;
+  left: 15px;
 }
 
 .about-content {
@@ -220,55 +214,64 @@ body {
 .read-more:hover {
   text-decoration: underline;
 }
+.aboutmebottom {
+  padding: 66px 0;
 
+  border-top: 1px solid #eeeeee1a;
+}
 /* 3. My Recent Works Section */
-.works-section {
-  padding: 5rem 0;
+.workssection {
+  background-image: url(../images/Projects\ Page.png);
+  padding: 268px 120px;
 }
 
-.works-section .section-title {
-  margin-bottom: 2.5rem;
+.worksbtn {
+  display: flex;
+  gap: 16px;
+  padding: 16px 0 48px 0;
+}
+button {
+  border: none;
+}
+.workbtn {
+  padding: 10px 32px;
+  color: #eeeeee;
+  background-color: rgba(57, 62, 70, 50%);
+
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  border-radius: 24px;
+}
+.workbtn:hover {
+  background-color: #00adb5;
 }
 
 .works-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  gap: 2rem;
+  display: flex;
+  gap: 48px;
+  justify-content: center;
 }
-
 .work-card {
-  background: #1e2532;
-  border-radius: 12px;
-  overflow: hidden;
-  border: 1px solid rgba(255, 255, 255, 0.05);
-  transition: transform 0.2s ease;
+  height: 280px;
+  width: 368px;
 }
-
 .work-card:hover {
   transform: translateY(-5px);
 }
 
 .card-img-placeholder {
-  height: 200px;
   background: #252e40;
 }
 
-.card-info {
-  padding: 1.5rem;
+.cardimage {
+  padding: 61px 52px;
 }
-
-.card-tag {
-  font-size: 0.8rem;
-  color: #00c4cc;
-  text-transform: uppercase;
-  font-weight: 600;
-  letter-spacing: 0.5px;
+.cardimage2 {
+  padding: 49px 0px 50px 0;
 }
-
-.work-card h3 {
-  font-size: 1.25rem;
-  margin-top: 0.4rem;
-  color: #ffffff;
+.cardimage3 {
+  padding: 55px 0px;
 }
 
 /* 4. Contact Form Section */
@@ -365,7 +368,7 @@ body {
 }
 
 /* Responsive Breakpoints */
-@media (max-width: 900px) {
+/* @media (max-width: 900px) {
   .hero-section,
   .about-section,
   .contact-section {
@@ -394,4 +397,4 @@ body {
     gap: 1.5rem;
     text-align: center;
   }
-}
+} */
